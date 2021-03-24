@@ -75,7 +75,7 @@ function LandingPage() {
 
             <div style={{ width: '85%', margin: '1rem auto' }}>
 
-                <Title level={2} > Movies by latest </Title>
+                <Title level={2} > Phim Mới Nhất </Title>
                 <hr />
                 <Row gutter={[16, 16]}>
                     {Movies && Movies.map((movie, index) => (
@@ -96,7 +96,7 @@ function LandingPage() {
 
                 <br />
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <button ref={buttonRef} className="loadMore" onClick={loadMoreItems}>Load More</button>
+                    <button ref={buttonRef} className="loadMore" onClick={loadMoreItems}>Tải Thêm</button>
                 </div>
             </div>
 

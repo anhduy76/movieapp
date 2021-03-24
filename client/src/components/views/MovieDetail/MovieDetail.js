@@ -104,7 +104,7 @@ function MovieDetailPage(props) {
                 {/* Actors Grid*/}
 
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem' }}>
-                    <Button onClick={toggleActorView}>Toggle Actor View </Button>
+                    <Button onClick={toggleActorView}>Diễn Viên Tham Gia</Button>
                 </div>
 
                 {ActorToggle &&

@@ -73,21 +73,21 @@ function FavoritePage() {
 
     return (
         <div style={{ width: '85%', margin: '3rem auto' }}>
-            <Title level={2} > Favorite Movies By Me </Title>
+            <Title level={2} >Phim Đã Thích</Title>
             <hr />
             {user.userData && !user.userData.isAuth ?
                 <div style={{ width: '100%', fontSize: '2rem', height: '500px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                    <p>Please Log in first...</p>
-                    <a href="/login">Go to Login page</a>
+
+                    <p>Hãy <a href="/login">Đăng Nhập</a></p>
                 </div>
                 :
                 !Loading &&
                 <table>
                     <thead>
                         <tr>
-                            <th>Movie Title</th>
-                            <th>Movie RunTime</th>
-                            <td>Remove from favorites</td>
+                            <th>Tên Phim</th>
+                            <th>Thời Lượng</th>
+                            <th>Bỏ Thích</th>
                         </tr>
                     </thead>
                     <tbody>

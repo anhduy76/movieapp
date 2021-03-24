@@ -42,7 +42,7 @@ function Comments(props) {
     return (
         <div>
             <br />
-            <Title level={3} > Share your opinions about {props.movieTitle} </Title>
+            <Title level={3} >Bình Luận</Title>
             <hr />
             {/* Comment Lists  */}
             {console.log(props.CommentLists)}
@@ -57,8 +57,8 @@ function Comments(props) {
             ))}
 
             {props.CommentLists && props.CommentLists.length === 0 &&
-                <div style={{ display: 'flex', justifyContent:'center', alignItems:'center', height:'200px'}} >
-                    Be the first one who shares your thought about this movie
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '200px' }} >
+                    Chia sẽ cảm nhận đầu tiên của bạn về bộ phim
                 </div>
             }
 
@@ -68,10 +68,10 @@ function Comments(props) {
                     style={{ width: '100%', borderRadius: '5px' }}
                     onChange={handleChange}
                     value={Comment}
-                    placeholder="write some comments"
+                    placeholder="bình luận của bạn"
                 />
                 <br />
-                <Button style={{ width: '20%', height: '52px' }} onClick={onSubmit}>Submit</Button>
+                <Button style={{ width: '20%', height: '52px' }} onClick={onSubmit}>Bình Luận</Button>
             </form>
 
         </div>
